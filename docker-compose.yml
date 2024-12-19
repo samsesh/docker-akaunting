@@ -1,0 +1,17 @@
+version: '2.1'
+
+services:
+
+  akaunting:
+    image: kuralabs/docker-akaunting:latest
+    hostname: akaunting
+    container_name: akaunting
+    restart: always
+    ports:
+      - 8080:8080
+    environment:
+      MYSQL_ROOT_PASSWORD: SgQp0gm17lMdefpVTcuLACKlyyGiWGJfUqS8vEZYqZvBuC3KaDkV6ZP4pZQUebri #Change this password to something at least as long and complicated you use this command 'openssl rand -base64 48'
+    volumes:
+      - ./data/mysql:/var/lib/mysql
+      - ./data/logs:/var/log
+      - ./data/config:/var/www/akaunting/config
