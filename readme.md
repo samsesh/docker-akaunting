@@ -43,7 +43,7 @@ This repository contains a Docker Compose file to set up an Akaunting instance u
 
 3. **Start the services**
    ```bash
-   docker-compose up -d
+   docker compose up -d
    ```
 
 4. **Access Akaunting**
@@ -67,8 +67,4 @@ Visit [donate.samsesh.net](https://donate.samsesh.net) for more information.
   docker logs akaunting
   ```
 
----
 
-## License
-
-This project is open-source and available under the [MIT License](https://github.com/samsesh/docker-akaunting/blob/main/LICENSE).
